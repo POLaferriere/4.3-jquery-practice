@@ -10,7 +10,7 @@ $grid-columns: 7;
 $max-width: 900px;
 
 body {
-
+  box-sizing: border-box;
   background-color: $background;
   color: $text-light;
   font-size: 62.5%;
@@ -92,10 +92,19 @@ body {
 
   .date {
     @include span-columns(1 of 7);
+    margin-bottom: 5px;
     padding: 40px 20px;
 
     &:nth-child(7n) {
       @include omega();
+    }
+
+    &.clicked {
+      border: 1px solid $highlight;
+      border-radius: 3px;
+      padding-top: 39px;
+      padding-bottom: 39px;
+      color: $highlight;
     }
   }
 }

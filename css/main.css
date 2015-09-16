@@ -7,6 +7,7 @@ html {
   box-sizing: inherit; }
 
 body {
+  box-sizing: border-box;
   background-color: black;
   color: white;
   font-size: 62.5%; }
@@ -111,8 +112,15 @@ body {
     display: block;
     margin-right: 4.11092%;
     width: 10.76207%;
+    margin-bottom: 5px;
     padding: 40px 20px; }
     .dates .date:last-child {
       margin-right: 0; }
     .dates .date:nth-child(7n) {
       margin-right: 0; }
+    .dates .date.clicked {
+      border: 1px solid #748b1d;
+      border-radius: 3px;
+      padding-top: 39px;
+      padding-bottom: 39px;
+      color: #748b1d; }
