@@ -1,0 +1,21 @@
+{
+  "name": "4.3-jquery-practice",
+  "version": "0.0.0",
+  "authors": [
+    "Pierre Laferriere <polaferriere@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "~4.0.2",
+    "neat": "~1.7.2",
+    "jquery": "~2.1.4"
+  }
+}
