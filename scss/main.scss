@@ -1,0 +1,101 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+$text-light: rgba(255, 255, 255, 1);
+$shadowed: rgba(86, 86, 86, 1);
+$highlight: rgba(116, 139, 29, 1);
+$background: rgba(0, 0, 0, 1);
+
+$grid-columns: 7;
+$max-width: 900px;
+
+body {
+
+  background-color: $background;
+  color: $text-light;
+  font-size: 62.5%;
+}
+
+.container {
+  @include outer-container();
+  padding: 50px 0;
+}
+
+.header-container {
+  position: relative;
+  border-bottom: 2px solid $text-light;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-size: em(40px);
+
+  .dot {
+    vertical-align: middle;
+    line-height: 10px;
+    color: $highlight;
+    font-size: 4em;
+  }
+
+  .month {
+    margin-right: 20px;
+    color: $shadowed;
+  }
+
+  .year {
+    margin-left: 20px;
+  }
+}
+
+.arrow-left {
+  @include triangle(30px 15px, $shadowed, left);
+  position: absolute;
+  left: 0;
+}
+
+.arrow-right {
+  @include triangle(30px 15px, $shadowed, right);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.days-container {
+  @include span-columns(7);
+}
+
+.days {
+  @include span-columns(7 of 7);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: em(30px);
+
+  .day {
+    @include span-columns(1 of 7);
+    padding: 40px 20px;
+
+    &:last-child {
+      @include omega();
+    }
+  }
+}
+
+.dates-container {
+  @include span-columns(7);
+}
+
+.dates {
+  @include span-columns(7 of 7);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: em(30px);
+
+  .date {
+    @include span-columns(1 of 7);
+    padding: 40px 20px;
+
+    &:nth-child(7n) {
+      @include omega();
+    }
+  }
+}

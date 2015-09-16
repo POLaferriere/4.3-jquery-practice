@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body {
+  background-color: black;
+  color: white;
+  font-size: 62.5%; }
+
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.header-container {
+  position: relative;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-size: 2.5em; }
+  .header-container .dot {
+    vertical-align: middle;
+    line-height: 10px;
+    color: #748b1d;
+    font-size: 4em; }
+  .header-container .month {
+    margin-right: 20px;
+    color: #565656; }
+  .header-container .year {
+    margin-left: 20px; }
+
+.arrow-left {
+  height: 0;
+  width: 0;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #565656;
+  border-top: 15px solid transparent;
+  position: absolute;
+  left: 0; }
+
+.arrow-right {
+  height: 0;
+  width: 0;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #565656;
+  border-top: 15px solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.days-container {
+  float: left;
+  display: block;
+  margin-right: 4.11092%;
+  width: 100%; }
+  .days-container:last-child {
+    margin-right: 0; }
+
+.days {
+  float: left;
+  display: block;
+  margin-right: 4.11092%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.875em; }
+  .days:last-child {
+    margin-right: 0; }
+  .days .day {
+    float: left;
+    display: block;
+    margin-right: 4.11092%;
+    width: 10.76207%;
+    padding: 40px 20px; }
+    .days .day:last-child {
+      margin-right: 0; }
+    .days .day:last-child {
+      margin-right: 0; }
+
+.dates-container {
+  float: left;
+  display: block;
+  margin-right: 4.11092%;
+  width: 100%; }
+  .dates-container:last-child {
+    margin-right: 0; }
+
+.dates {
+  float: left;
+  display: block;
+  margin-right: 4.11092%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.875em; }
+  .dates:last-child {
+    margin-right: 0; }
+  .dates .date {
+    float: left;
+    display: block;
+    margin-right: 4.11092%;
+    width: 10.76207%;
+    padding: 40px 20px; }
+    .dates .date:last-child {
+      margin-right: 0; }
+    .dates .date:nth-child(7n) {
+      margin-right: 0; }
